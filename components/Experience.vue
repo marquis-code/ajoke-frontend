@@ -1,7 +1,4 @@
 <template>
-  <!-- <div class="container mx-auto p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-    <FlipCard v-for="user in users" :key="user.id" :user="user" />
-  </div> -->
   <div class="bg-white">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:mx-0">

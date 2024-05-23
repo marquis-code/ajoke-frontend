@@ -3,8 +3,6 @@
         <div class="flip-card-inner" :class="{ 'is-flipped': flipped }">
             <div class="flip-card-front">
                 <img :src="user.image" />
-                <!-- <h2>{{ user.name }}</h2>
-                <p>{{ user.email }}</p> -->
             </div>
             <div class="flip-card-back">
                 <div class="p-3 space-y-3">

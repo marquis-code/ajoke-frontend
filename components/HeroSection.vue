@@ -24,7 +24,6 @@
                     <a href="#" class="text-sm font-semibold leading-6 text-white">Home</a>
                     <a href="#about" class="text-sm font-semibold leading-6 text-white">About me</a>
                     <a href="#projects" class="text-sm font-semibold leading-6 text-white">Projects</a>
-                    <!-- <a href="#" class="text-sm font-semibold leading-6 text-white">Blog</a> -->
                 </div>
                 <div class="hidden lg:flex lg:flex-1 lg:justify-end">
                     <a href="#contact" class="text-sm font-semibold leading-6 text-white">Contact Me <span
