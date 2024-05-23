@@ -5,8 +5,7 @@
                 <div class="flex lg:flex-1">
                     <a href="#" class="-m-1.5 p-1.5">
                         <span class="sr-only">Your Company</span>
-                        <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                            alt="">
+                        <img class="h-8 w-auto" src="https://marquis.netlify.app/logo.png" alt="">
                     </a>
                 </div>
                 <div class="flex lg:hidden">
@@ -24,6 +23,7 @@
                     <a href="#" class="text-sm font-semibold leading-6 text-white">Home</a>
                     <a href="#about" class="text-sm font-semibold leading-6 text-white">About me</a>
                     <a href="#projects" class="text-sm font-semibold leading-6 text-white">Projects</a>
+                    <a href="#jobs" class="text-sm font-semibold leading-6 text-white">Experiences</a>
                 </div>
                 <div class="hidden lg:flex lg:flex-1 lg:justify-end">
                     <a href="#contact" class="text-sm font-semibold leading-6 text-white">Contact Me <span
@@ -74,8 +74,8 @@
         </header>
 
         <div class="relative isolate overflow-hidden">
-            <!-- <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
-                alt="" class="absolute inset-0 -z-10 h-full w-full object-cover"> -->
+            <img src="@/assets/img/bg1.jpg"
+                alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
             <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
                 aria-hidden="true">
                 <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
@@ -92,13 +92,14 @@
                     </div>
                 </div> -->
                 <div class="text-center">
-                    <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Frontend Developer</h1>
-                    <p class="mt-6 text-lg leading-8 text-gray-300">{Java Script, Typescript, React Js, Vue Js,
+                    <h1 data-aos="flip-left" class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Frontend Developer</h1>
+                    <p data-aos="flip-left" class="mt-6 px-6 lg:px-0 text-sm lg:text-lg leading-8 text-gray-300">{Java Script, Typescript, React Js, Vue
+                        Js,
                         Tailwind Css,
                         Node Js, Next Js, MongoDB, Sass...}
                     </p>
                     <div>
-                        <p class="mt-6 text-lg leading-8 text-gray-300">Specializing in React & Next Js. I leverage
+                        <p data-aos="flip-left" class="mt-6 px-6 lg:px-0 text-sm lg:text-lg leading-8 text-gray-300">Specializing in React & Next Js. I leverage
                             cutting-edge technologies to bring web projects to live.
                         </p>
                     </div>
@@ -107,13 +108,13 @@
                             class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">See
                             my dev work
                             started</a> -->
-                        <a href="/resume.pdf" target="_blank"
+                        <a data-aos="flip-left" href="/resume.pdf" target="_blank"
                             class="text-sm font-semibold leading-6 text-white">Download CV<span
                                 aria-hidden="true">→</span></a>
                     </div>
 
-                    <div class="flex justify-center items-center mt-20">
-                        <img class="w-auto" src="@/assets/img/gadgets.png" alt="">
+                    <div data-aos="flip-left" class="flex justify-center items-center mt-20">
+                        <img class="w-auto" src="@/assets/img/single.png" alt="">
                     </div>
                 </div>
             </div>

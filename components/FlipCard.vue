@@ -1,5 +1,5 @@
 <template>
-    <div class="flip-card pr-6" @click="flipped = !flipped">
+    <div class="flip-card lg:w-[400px] h-[300px]" @click="flipped = !flipped">
         <div class="flip-card-inner" :class="{ 'is-flipped': flipped }">
             <div class="flip-card-front">
                 <img :src="user.image" />
@@ -37,8 +37,6 @@ const flipped = ref(false);
 
 <style scoped>
 .flip-card {
-    width: 400px;
-    height: 300px;
     perspective: 1000px;
     cursor: pointer;
 }

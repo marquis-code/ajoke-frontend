@@ -2,16 +2,16 @@
   <div class="bg-white">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:mx-0">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <h2 data-aos="flip-left" class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           A few of my projects..
         </h2>
-        <p class="mt-2 text-base lg:text-lg leading-8 text-gray-600">
+        <p data-aos="flip-left" class="mt-2 text-base lg:text-lg leading-8 text-gray-600">
           A short list of all the projects worked on or contributed to
         </p>
       </div>
       <div
         class="mx-auto lg:pr-0 mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-        <FlipCard v-for="user in users" :key="user.name" :user="user" />
+        <FlipCard data-aos="flip-left" v-for="user in users" :key="user.name" :user="user" />
       </div>
     </div>
   </div>
