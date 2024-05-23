@@ -71,7 +71,7 @@
         </header>
         <div class="grid lg:grid-cols-2 gap-6 pt-10 lg:pt-0">
             <div class="lg:hidden flex justify-center items-center pt-10">
-                <img data-aos="flip-left" src="@/assets/img/profile1.jpeg" alt="Circular Image"
+                <img data-aos="flip-left" src="@/assets/img/profile4.jpeg" alt="Circular Image"
                     class="rounded-full h-72 w-72 object-center object-cover p-6" />
             </div>
             <div class="flex flex-col items-start px-6 lg:pl-14 justify-center">
