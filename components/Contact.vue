@@ -46,7 +46,7 @@
                     d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                 </svg>
               </dt>
-              <dd><a class="hover:text-gray-900" href="tel:+1 (555) 234-5678">+234 814-762-6503</a></dd>
+              <dd><a class="hover:text-gray-900" href="tel:+2348147626503">+234 814-762-6503</a></dd>
             </div>
             <div class="flex gap-x-4">
               <dt class="flex-none">
@@ -57,58 +57,140 @@
                     d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                 </svg>
               </dt>
-              <dd><a class="hover:text-gray-900" href="mailto:hello@example.com">abahmarquis@gmail.com</a></dd>
+              <dd><a class="hover:text-gray-900" href="mailto:abahmarquis@gmail.com">abahmarquis@gmail.com</a></dd>
             </div>
           </dl>
         </div>
       </div>
-      <form action="#" method="POST" class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
-        <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+      <form @submit.prevent="handleSubmit" class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
+      data-aos="fade-up">
+      <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
           <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-            <div>
-              <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
-              <div class="mt-2.5">
-                <input type="text" name="first-name" id="first-name" autocomplete="given-name"
-                  class="block w-full rounded-md border px-3 border-gray-400 px-3.5 py-3.5 text-gray-900 shadow-sm ">
+              <div>
+                  <label for="first-name"
+                      class="block text-sm font-semibold leading-6 text-gray-900">First
+                      name</label>
+                  <div class="mt-2.5">
+                      <input type="text" v-model="formData.firstName" name="first-name" id="first-name"
+                          autocomplete="given-name"
+                          class="block w-full rounded-md border-[0.6px] border-gray-600 px-3.5 py-3 text-gray-900 shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6">
+                  </div>
               </div>
-            </div>
-            <div>
-              <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Last name</label>
-              <div class="mt-2.5">
-                <input type="text" name="last-name" id="last-name" autocomplete="family-name"
-                  class="block w-full rounded-md border px-3 border-gray-400 px-3.5 py-3.5 text-gray-900 shadow-sm ">
+              <div>
+                  <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Last
+                      name</label>
+                  <div class="mt-2.5">
+                      <input type="text" v-model="formData.lastName" name="last-name" id="last-name"
+                          autocomplete="family-name"
+                          class="block w-full rounded-md border-[0.6px] border-gray-600 px-3.5 py-3 text-gray-900 shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6">
+                  </div>
               </div>
-            </div>
-            <div class="sm:col-span-2">
-              <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
-              <div class="mt-2.5">
-                <input type="email" name="email" id="email" autocomplete="email"
-                  class="block w-full rounded-md border px-3 border-gray-400 px-3.5 py-3.5 text-gray-900 shadow-sm ">
+              <div class="sm:col-span-2">
+                  <label for="email"
+                      class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
+                  <div class="mt-2.5">
+                      <input type="email" v-model="formData.email" name="email" id="email"
+                          autocomplete="email"
+                          class="block w-full rounded-md border-[0.6px] border-gray-600 px-3.5 py-3 text-gray-900 shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6">
+                  </div>
               </div>
-            </div>
-            <div class="sm:col-span-2">
-              <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900">Phone number</label>
-              <div class="mt-2.5">
-                <input type="tel" name="phone-number" id="phone-number" autocomplete="tel"
-                  class="block w-full rounded-md border px-3 border-gray-400 px-3.5 py-3.5 text-gray-900 shadow-sm ">
+              <div class="sm:col-span-2">
+                  <label for="phone-number"
+                      class="block text-sm font-semibold leading-6 text-gray-900">Phone
+                      number</label>
+                  <div class="mt-2.5">
+                      <input type="tel" v-model="formData.phoneNumber" name="phone-number"
+                          id="phone-number" autocomplete="tel"
+                          class="block w-full rounded-md border-[0.6px] border-gray-600 px-3.5 py-3 text-gray-900 shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6">
+                  </div>
               </div>
-            </div>
-            <div class="sm:col-span-2">
-              <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
-              <div class="mt-2.5">
-                <textarea name="message" id="message" rows="4"
-                  class="block w-full rounded-md border px-3 resize-none border-gray-400 px-3.5 py-3.5 text-gray-900 shadow-sm "></textarea>
+              <div class="sm:col-span-2">
+                  <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Tell us
+                      more about your project</label>
+                  <div class="mt-2.5">
+                      <textarea name="message" v-model="formData.tell_us_more_about_your_project"
+                          id="message" rows="4"
+                          class="block w-full rounded-md border-[0.6px] border-gray-600 px-3.5 py-3 text-gray-900 shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6"></textarea>
+                  </div>
               </div>
-            </div>
           </div>
           <div class="mt-8 flex justify-end">
-            <button type="submit"
-              class="rounded-md bg-indigo-600 px-3.5 py-3.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send
-              message</button>
+              <button type="submit" :disabled="!isFormEmpty || processing"
+                  class="rounded-md bg-indigo-600 disabled:cursor-not-allowed disabled:opacity-25 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                  {{ processing ? 'processing' : 'Send message' }}</button>
           </div>
-        </div>
-      </form>
+      </div>
+  </form>
     </div>
   </div>
 
 </template>
+
+<script setup lang="ts">
+const processing = ref(false)
+const formData = ref({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phoneNumber: '',
+    tell_us_more_about_your_project: ''
+});
+
+async function handleSubmit() {
+    processing.value = true
+    const url = 'https://buildr-backend.onrender.com/api/auth/signup';  // Your API endpoint
+    try {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData.value)
+        });
+
+        if (!response.ok) {
+            throw new Error('Network response was not ok.');
+        }
+
+        const result = await response.json();
+        showModal.value = true
+        formData.value.firstName = ''
+        formData.value.lastName = ''
+        formData.value.email = ''
+        formData.value.phoneNumber = ''
+        formData.value.tell_us_more_about_your_project = ''
+        useNuxtApp().$toast.info('Thanks for reaching out. I would revert back to you shortly.');
+        
+    } catch (error) {
+        // if (process.client) {
+        //     useNuxtApp().$toast('Error submitting form');
+        // }
+    } finally {
+        processing.value = false
+    }
+}
+
+const isFormEmpty = computed(() => {
+    return !!(formData.value.firstName && formData.value.lastName && formData.value.email && formData.value.phoneNumber && formData.value.tell_us_more_about_your_project)
+})
+
+const capitalizeFirstLetter = (string: string) => {
+    if (!string) return string; // Handle null, undefined, or empty string
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+// nextTick(() => {
+//     if (process.client) {
+//         useNuxtApp().$toast('notify after nextTick');
+//     }
+// });
+
+// const notify = () => {
+//     useNuxtApp().$toast.error('toastify success');
+//     // or
+//     // toast.info('toastify success');
+// };
+
+
+const showModal = ref(false);
+</script>
