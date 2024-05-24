@@ -24,7 +24,7 @@
         </div>
 
         <div class="col-span-6 sm:flex sm:items-center sm:gap-4">
-            <button :disabled="!isFormEmpty"
+            <button :disabled="isFormEmpty" type="submit"
                 class="inline-block shrink-0 disabled:cursor-not-allowed disabled:opacity-25 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition">
                 Login
             </button>
