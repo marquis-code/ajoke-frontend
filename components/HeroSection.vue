@@ -94,7 +94,7 @@
                 </div> -->
                 <div class="text-center">
                     <h1 data-aos="flip-left" class="text-4xl font-black tracking-tight text-white sm:text-6xl">Frontend
-                        Developer</h1>
+                        Software Engineer</h1>
                     <p data-aos="flip-left" class="mt-6 px-6 lg:px-0 text-sm lg:text-lg leading-8 text-gray-300">{Java
                         Script, Typescript, React Js, Vue
                         Js,
